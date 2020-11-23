@@ -1,0 +1,20 @@
+{
+	"name": "1.0/sky-net-test",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Mikhaylov Nikita",
+			"email": "mikhaylovnv.dev@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Services\\": "Services",
+			"Views\\": "Views",
+			"Models\\": "Models",
+			"Base\\": "Base",
+			"Drawers\\": "Drawers"
+		}
+	},
+	"require": {}
+}

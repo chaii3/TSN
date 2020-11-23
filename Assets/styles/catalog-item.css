@@ -1,0 +1,152 @@
+@import "catalog-item-speed.css";
+
+@keyframes hiddenBlock {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.catalog_hidden-animate {
+    animation: hiddenBlock .15s;
+    opacity:   0;
+}
+
+.catalog-item {
+    background:    #fff;
+    margin-bottom: 22px;
+    padding:       10px 0 0;
+    border-top:    1px solid #dbdbde;
+    border-bottom: 1px solid #dbdbde;
+}
+
+.catalog-item_tarif {
+    padding-bottom: 0;
+}
+
+.catalog-item:last-child {
+    margin-bottom: 0;
+}
+
+.catalog-item__header {
+    font-size:      18px;
+    font-weight:    bold;
+    color:          #2bc859;
+    margin-left:    10px;
+    border-bottom:  1px solid #dbdbde;
+    padding-bottom: 8px;
+}
+
+.catalog-item__content {
+    display:         flex;
+    justify-content: space-between;
+    padding-right:   10px;
+    align-items:     center;
+    margin-top:      7px;
+    margin-bottom:   7px;
+    cursor:          pointer;
+}
+
+.catalog-item__icon {
+    background-image: url("../../Assets/icons/right-chevron.svg");
+    width:            10px;
+    height:           10px;
+}
+
+.catalog-item__options-info {
+    font-size:    16px;
+    color:        #707273;
+    margin-top:   6px;
+    padding-left: 10px;
+    font-weight:  bold;
+    cursor:       default;
+}
+
+.catalog-item__price-info {
+    font-size:   16px;
+    color:       #707273;
+    margin-top:  6px;
+    font-weight: bold;
+    cursor:      default;
+}
+
+.catalog-item__price-info_card {
+    font-size:  15px;
+    margin-top: 5px;
+}
+
+.catalog-item__footer {
+    display:         flex;
+    justify-content: flex-start;
+    align-items:     center;
+    border-top:      1px solid #dbdbde;
+    padding:         12px 10px 11px 0;
+    margin-left:     10px;
+}
+
+.catalog-item__price {
+    color:         #4c4e54;
+    margin-top:    5px;
+    margin-bottom: 5px;
+    padding-left:  12px;
+    font-weight:   bold;
+    cursor:        default;
+}
+
+.catalog-item__price_tarif {
+    margin-bottom: 0;
+}
+
+.catalog-item__link {
+    color:           #7c7cde;
+    text-decoration: none;
+    font-weight:     bold;
+}
+
+.choose-button {
+    background:     #2bc859;
+    text-align:     center;
+    flex-grow:      1;
+    padding-top:    10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 640px) {
+    .catalog_tarif-list,
+    .catalog {
+        display:         flex;
+        justify-content: space-between;
+        flex-flow:       row wrap;
+        max-width:       650px;
+        margin-left:     auto;
+        margin-right:    auto;
+        align-items:     baseline;
+    }
+
+    .catalog-item_tarif {
+        min-width: 275px;
+    }
+
+    .catalog_tarif-list {
+        max-width: 650px;
+    }
+
+    .catalog-item_type-card {
+        width:        50%;
+        margin-left:  auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .catalog {
+        max-width: 900px;
+    }
+
+    .catalog_tarif-list {
+        max-width: 900px;
+    }
+}

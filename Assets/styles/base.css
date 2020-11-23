@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Roboto Light';
+    src:         url("../../fonts/ofont.ru_Roboto Condensed Light.ttf");
+    font-style:  normal;
+    font-weight: normal;
+}
+
+body {
+    margin:      0;
+    background:  #e9e9f3;
+    font-family: "Roboto Light";
+}
+
+.rub {
+    line-height: 5px;
+    width: 0.4em;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+}
